@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#5a1470" />
+      <stop offset="60%" stop-color="#420b52" />
+      <stop offset="100%" stop-color="#2c0538" />
+    </radialGradient>
+    <radialGradient id="flowerCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb703" />
+      <stop offset="50%" stop-color="#ffdd00" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <filter id="drop" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Circular background badge -->
+  <circle cx="256" cy="256" r="256" fill="url(#bg)" />
+
+  <!-- Subtle watermark Thai/Burmese letters in background -->
+  <g opacity="0.12" fill="#d98eff" font-family="'Noto Sans Thai', 'Noto Sans Myanmar', sans-serif" font-weight="bold" font-size="28">
+    <text x="70" y="90">ก</text>
+    <text x="140" y="75">ข</text>
+    <text x="210" y="110">ค</text>
+    <text x="320" y="80">ฆ</text>
+    <text x="410" y="120">ง</text>
+    <text x="60" y="160">จ</text>
+    <text x="370" y="170">ฉ</text>
+    <text x="440" y="210">ช</text>
+    <text x="50" y="320">ဆ</text>
+    <text x="90" y="390">တ</text>
+    <text x="170" y="440">ထ</text>
+    <text x="260" y="460">ဒ</text>
+    <text x="350" y="430">န</text>
+    <text x="420" y="360">ပ</text>
+    <text x="300" y="380">ญ</text>
+    <text x="230" y="360">ฏ</text>
+    <text x="380" y="300">ฐ</text>
+    <text x="140" y="330">ฒ</text>
+  </g>
+
+  <!-- Yellow Stylized Script Text "သုခဝတီ" / School Name -->
+  <g filter="url(#drop)">
+    <!-- Main Yellow Calligraphy Path Elements -->
+    <!-- First Character: သ with bottom flourish & beak -->
+    <path d="M 90 270 C 80 250 82 225 105 215 C 122 207 142 216 150 230 C 158 216 178 207 195 216 C 218 227 220 252 210 272 C 198 295 178 300 162 288 C 150 278 148 262 148 248 C 145 235 130 235 125 248 C 118 268 110 286 90 270 Z" fill="#fff000" />
+    <path d="M 85 260 C 70 275 80 305 105 305 C 130 305 142 280 148 260 C 154 280 168 305 195 305 C 215 305 225 285 220 260 C 210 215 165 210 150 238 C 135 210 95 215 85 260 Z" fill="#fff000" stroke="#f0d800" stroke-width="2" />
+    <!-- Downward stem with bird/beak loop -->
+    <path d="M 144 290 L 144 365 C 144 375 148 382 155 382 C 162 382 172 370 178 375 C 180 377 165 388 152 388 C 138 388 132 376 132 365 L 132 290 Z" fill="#fff000" />
+    <circle cx="166" cy="377" r="3" fill="#4d1060" />
+
+    <!-- Second Character: 6-like / curved flourish with tail reaching up -->
+    <path d="M 215 285 C 205 265 210 235 235 232 C 255 230 268 245 265 268 C 262 288 245 298 228 296 C 220 295 216 288 222 282 C 235 270 248 275 250 262 C 252 248 242 242 235 244 C 222 248 220 268 226 280 Z" fill="#fff000" />
+    <path d="M 230 238 C 230 215 240 190 262 172 C 275 162 295 152 298 135 C 295 145 280 160 265 170 C 248 185 240 205 240 230 Z" fill="#fff000" />
+
+    <!-- Third element: ဓ / ဇ / double curl -->
+    <path d="M 275 242 C 275 228 288 222 298 230 C 308 238 302 255 292 258 C 285 260 280 252 285 245 Z" fill="#fff000" />
+    <path d="M 285 260 C 280 278 295 292 312 288 C 325 285 330 270 322 255 C 315 242 298 245 296 258 Z" fill="#fff000" />
+
+    <!-- Fourth element: ဝ circular glyph -->
+    <path d="M 338 260 C 338 232 360 215 392 218 C 420 220 440 242 438 270 C 435 296 410 315 382 312 C 355 310 338 288 338 260 Z M 358 262 C 358 280 370 295 388 295 C 408 295 418 280 418 262 C 418 245 405 235 388 235 C 370 235 358 245 358 262 Z" fill="#fff000" />
+
+    <!-- Fifth element: curved loop terminal (right) -->
+    <path d="M 432 238 C 445 220 472 222 485 238 C 498 255 495 282 480 298 C 465 312 445 312 438 298 C 432 285 442 278 450 285 C 462 295 478 288 480 275 C 482 258 470 245 455 245 C 442 245 435 255 438 268 C 440 272 432 275 430 270 C 425 258 425 245 432 238 Z" fill="#fff000" />
+  </g>
+
+  <!-- Realistic White & Golden Frangipani / Plumeria Flower on top-left of first character -->
+  <g transform="translate(132, 190) scale(1.15)" filter="url(#drop)">
+    <!-- 5 Petals -->
+    <!-- Petal 1: Top -->
+    <path d="M 0 0 C -15 -25 -25 -65 0 -85 C 20 -70 20 -35 0 0 Z" fill="#ffffff" stroke="#f2ebf5" stroke-width="1.5" />
+    <!-- Petal 2: Top Right -->
+    <path d="M 0 0 C 15 -25 55 -40 75 -20 C 70 5 35 15 0 0 Z" fill="#ffffff" stroke="#f2ebf5" stroke-width="1.5" />
+    <!-- Petal 3: Bottom Right -->
+    <path d="M 0 0 C 25 15 45 55 25 75 C 5 70 -5 40 0 0 Z" fill="#ffffff" stroke="#f2ebf5" stroke-width="1.5" />
+    <!-- Petal 4: Bottom Left -->
+    <path d="M 0 0 C -15 25 -55 45 -70 25 C -65 5 -35 -5 0 0 Z" fill="#ffffff" stroke="#f2ebf5" stroke-width="1.5" />
+    <!-- Petal 5: Top Left -->
+    <path d="M 0 0 C -25 -10 -65 -25 -60 -55 C -35 -60 -15 -30 0 0 Z" fill="#ffffff" stroke="#f2ebf5" stroke-width="1.5" />
+
+    <!-- Flower glowing golden yellow center -->
+    <circle cx="0" cy="0" r="28" fill="url(#flowerCenter)" />
+    <!-- Starburst yellow center lines -->
+    <path d="M 0 0 L 0 -18 M 0 0 L 16 -8 M 0 0 L 12 14 M 0 0 L -12 14 M 0 0 L -16 -8" stroke="#ff9e00" stroke-width="2.5" stroke-linecap="round" opacity="0.7" />
+  </g>
+</svg>
